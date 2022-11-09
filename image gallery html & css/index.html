@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+    <h1>*Some of My Faceless Digital Illustration*</h1>
+    <div class="by">Website Built by Salha O.</div>
+    <div class="hero">
+    
+        <div class="carousel">
+            <ul>
+                <li><img src="images/01.jpg"></li>
+                <li><img src="images/02.jpg"></li>
+                <li><img src="images/03.jpg"></li>
+                <li><img src="images/08.jpg"></li>
+                <li><img src="images/09.jpg"></li>
+                <li><img src="images/10.jpg"></li>
+                <li><img src="images/11.PNG"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script><script src="jquery.flipster.min.js"></script>
+<script>
+    $('.carousel').flipster({
+        style: 'carousel',
+        spacing: -0.3,
+    });
+</script>
+</body>
+</html>
