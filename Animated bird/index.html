@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Bird</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            animation: sky 25s linear infinite;
+        }
+
+        .container {
+            position: absolute;
+            top: 100px;
+            height: 82px;
+            width: 100px;
+            background: url(flying\ bird.png);
+            background-size: 400px;
+            animation: animate 1s steps(5) infinite,
+                    move 6s linear infinite;
+        }
+
+        @keyframes animate {
+            100%{
+                background-position: 1000px;
+            }
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(800px);
+            }
+        }
+        /* @keyframes sky {
+            0%{
+                background-color: white;
+            }
+            50%{
+                background-color: rgb(190, 190, 186);
+            }
+            80%{
+                background-color: rgb(216, 216, 176);
+            }
+            100%{
+                background-color: white;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+<!-- Code was written by following "Cool Programming Projects" YouTube short 
+used png image source: https://opengameart.org/content/bevouliin-free-flappy-chicken-->
